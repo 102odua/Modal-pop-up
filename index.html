@@ -44,10 +44,10 @@
                 <use href="./image/icon.svg#icon-checkbox"></use>
               </svg>
             </span>
-            <div class="modal-order-text">
-              <h3 class="modal-order-title">Cabbage Basket</h3>
-              <p class="modal-item-paragraf">Plant</p>
-            </div>
+
+            <h3 class="modal-order-title">Cabbage Basket</h3>
+            <p class="modal-item-paragraf">Plant</p>
+
             <img
               class="modal-item-img"
               srcset="
@@ -56,8 +56,8 @@
               "
               src="./image/cabbage-modal.png"
               alt="cabbage"
-              width="94px"
-              height="78px"
+              width="94"
+              height="78"
             />
           </label>
           <!--          tomato -->
@@ -81,10 +81,10 @@
                 <use href="./image/icon.svg#icon-checkbox"></use>
               </svg>
             </span>
-            <div class="modal-order-text">
-              <h3 class="modal-order-title">Tomato Basket</h3>
-              <p class="modal-item-paragraf">Plant</p>
-            </div>
+
+            <h3 class="modal-order-title">Tomato Basket</h3>
+            <p class="modal-item-paragraf">Plant</p>
+
             <div class="modal-img-container">
               <img
                 class="modal-item-img"
@@ -94,8 +94,8 @@
                 "
                 src="./image/tomato-modal.png"
                 alt="tomato"
-                width="94px"
-                height="78px"
+                width="94"
+                height="78"
               />
             </div>
           </label>
@@ -119,10 +119,10 @@
                 <use href="./image/icon.svg#icon-checkbox"></use>
               </svg>
             </span>
-            <div class="modal-order-text">
-              <h3 class="modal-order-title">Vegetables Basket</h3>
-              <p class="modal-item-paragraf">Plant</p>
-            </div>
+
+            <h3 class="modal-order-title">Vegetables Basket</h3>
+            <p class="modal-item-paragraf">Plant</p>
+
             <img
               class="modal-item-img"
               srcset="
@@ -131,20 +131,22 @@
               "
               src="./image/vegetables-modal.png"
               alt="vegetables"
-              width="94px"
-              height="78px"
+              width="94"
+              height="78"
             />
           </label>
         </li>
       </ul>
-      <div class="">
-        <form action="" class="order-form">
+      <!--      form+ button block -->
+      <div class="modal-form-block">
+        <form action="./index.html" class="order-form" id="order-form">
           <label for="user-name"></label>
           <input
             class="modal-input"
             type="text"
             name="user-name"
             id="user-name"
+            required
             placeholder="Enter full name..."
           />
           <label for="user-email"></label>
@@ -153,6 +155,7 @@
             type="email"
             name="user-email"
             id="user-email"
+            required
             placeholder="Enter email..."
           />
           <label for="user-card"></label>
@@ -161,6 +164,7 @@
             type="text"
             name="user-card"
             id="user-card"
+            required
             placeholder="Enter card.."
           />
           <label for="user-comment"></label>
@@ -171,16 +175,18 @@
             placeholder="Enter comments..."
           ></textarea>
         </form>
-        <button class="modal-sub-btn" type="button">Submit</button>
-        <div class="modal-img">
-          <img
-            srcset="./image/girl-modal.png 1x, ./image/girl-modal-2x.png 2x"
-            src="./image/girl-modal.png"
-            alt="girl"
-            width="444"
-            height="413"
-          />
-        </div>
+        <button class="modal-sub-btn" type="button" form="order-form">
+          Submit
+        </button>
+      </div>
+      <div class="modal-img">
+        <img
+          srcset="./image/girl-modal.png 1x, ./image/girl-modal-2x.png 2x"
+          src="./image/girl-modal.png"
+          alt="girl"
+          width="444"
+          height="413"
+        />
       </div>
     </div>
   </body>
